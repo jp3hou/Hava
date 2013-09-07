@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hava</title>
+    <title>Bills</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -98,13 +98,6 @@
       .footer a {
         color: #ccccff;
       }
-      .span12 p {
-        font-size: 16px;
-        float: left;
-      }
-      .span12 button {
-        
-      }
     </style>
   </head>
   <body>
@@ -120,11 +113,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>sap
-          <a class="brand" href="#">Hava</a>
+          <a class="brand" href="index.html">Hava</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="bills.html">Bills</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="bills.html">Bills</a></li>
               <li><a href="#shopping-cart">Shopping Cart</a></li>
 	      <li><a href="#chores">Chores</a></li>
             </ul>
@@ -140,12 +133,32 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <p>You owe Sarah $5 for household chores</p>
-	         <button type="button"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now!</a></button>
-        </div>
-      </div> 
+      <div>
+	<p>Month</p>
+		<select>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+     </div>
+	<div>
+	<form>
+		Description: <input type="text" name="description">
+	</form>
+	<form>
+		Amount Paid: <input type="text" name="amountpaid">
+	</form>
+	</div>
+
   </body>
 </html>
 
