@@ -5,8 +5,7 @@
   top: 0px;
   z-index: -1;
   background-image: url("stripe.png");
-  background-repeat: repeat-y;
-  
+  background-repeat: repeat-y;  
 }
 
 #formFill{
@@ -14,10 +13,10 @@
   margin-top: 80px;
 }
 
-  /* Large desktop */
-<<<<<<< HEAD
+  button {
 
-=======
+  }
+  /* Large desktop */
       @media (min-width: 980px) { 
         body {
          padding-top: 60px;
@@ -100,18 +99,37 @@
       .footer a {
         color: #ccccff;
       }
-      .span12 p {
-	text-align: center;
-	padding: 15px;
-        font-size: 16px;
+      
+      .owe {
+        width: 300px;
       }
-      .span12 button-pay {  
+      .owe p {
+        float: left; 
       }
+
+      .owe button {
+        //float: left;
+      }
+
+      .due {
+        width: 300px;
+      }
+<<<<<<< HEAD
       table { 
 	border-collapse:separate; 
 	border-spacing: 10px; 
 	margin-left: 10%; 
 	margin-top: 5%;
+=======
+
+
+      .due p {
+        float: left;
+      }
+     
+      table { border-collapse:separate; border-spacing: 10px; margin-left: 15px; 
+
+>>>>>>> 1c91995436470386746f62f6aa30d4734cc1c3df
       }
       .utilities select, input{
 	width: 125px;
@@ -240,7 +258,6 @@ button-shopping {
   margin-bottom:3px;
   width:260px;
 }
-
 
 
 .shopp{

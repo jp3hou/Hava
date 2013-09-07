@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hava</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-  </head>
-  <body>
-    <div id="symbol"></div>
-    
-    
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="index.html">Hava</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="bills.html">Bills</a></li>
-              <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
-	      <li><a href="#chores">Chores</a></li>
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Hava</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
+</head>
+<body>
+  <div id="symbol"></div>
+
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar"
+        data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="index.html">Hava</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="bills.html">Bills</a></li>
+          <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
+          <li><a href="#chores">Chores</a></li>
+        </ul>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="container">
-      <div class="row-fluid heading">
-        <div class="span12", id="prettify">
-          <p>You owe Sarah $5</p>
-	         <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now!</a></button>
-	  <p>Jane owes you $23</p>
-		<button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Charge Now!</a></button>
-	  <p>All your accounts with Susie are fine and dandy</p>
-		Yay! No further action necessary :)
-	  <p>You owe Rebecca $13</p>
-		<button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now!</a></button>
-        </div>
-      </div> 
-  </body>
+<div class="container">
+  <div class="row-fluid heading">
+    <div id="series1">
+      <div class="owe">
+        <p>You owe Sarah $5</p>
+        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+      </div><br>
+      <div class="owe">
+        <p>You owe Jane $4</p>
+        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+      </div><br>
+      <div class="owe">
+        <p>You owe Nicole $4</p>
+        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+      </div> <br> 
+    </div> 
+  </div>
+
+  <div class="row-fluid heading">
+
+    <div class="due">
+      <p>You owe Sarah $5</p>
+      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+    </div><br>
+    <div class="due">
+      <p>You owe Jane $4</p>
+      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+    </div><br>
+    <div class="due">
+      <p>You owe Nicole $4</p>
+      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+    </div>  
+  </div>
+
+   <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+</div>
+</body>
 </html>
 
