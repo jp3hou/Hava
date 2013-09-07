@@ -1,5 +1,0 @@
-function go() {
-    alert("testing");
-}
-
-
