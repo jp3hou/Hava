@@ -115,18 +115,19 @@
         width: 300px;
       }
 
+
       .due p {
         float: left;
       }
      
       table { border-collapse:separate; border-spacing: 10px; margin-left: 15px; 
+
       }
       .utilities select, input{
 	width: 125px;
-	
       }
 	#blarf {
-		margin-left: 30px;
+		margin-left: 11%;
 	}
 
       
