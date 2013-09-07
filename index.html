@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Hava</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-  rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/exporting.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-    var options = {
-      chart: {
-        renderTo: 'linecontainer',
-        type: 'line',
-        marginRight: 130,
-        marginBottom: 25
-      },
-      title: {
-        text: 'Billing History',
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Hava</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+        rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          var options = {
+            chart: {
+              renderTo: 'linecontainer',
+              type: 'line',
+              marginRight: 130,
+              marginBottom: 25
+            },
+            title: {
+              text: 'Billing History',
                     x: -20 //center
                   },
                   subtitle: {
@@ -72,15 +72,15 @@
                 }).error(function() {console.log('error');});
               });
 
-var optionsPie = {
-  chart: {
-    renderTo: 'piecontainer',
-    type: 'pie',
-    marginRight: 130,
-    marginBottom: 25
-  },
-  title: {
-    text: 'Billing by Categories',
+      var optionsPie = {
+        chart: {
+          renderTo: 'piecontainer',
+          type: 'pie',
+          marginRight: 130,
+          marginBottom: 25
+        },
+        title: {
+          text: 'Billing by Categories',
                     x: -20 //center
                   },
                   subtitle: {
@@ -132,52 +132,55 @@ var optionsPie = {
                       <ul class="nav">
                         <li><a href="bills.html">Bills</a></li>
                         <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
-                        <li><a href="#chores">Chores</a></li>
+                        <li><a href="chores/chores.html">Chores</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="container">
-                <div class="row-fluid heading">
-                  <div id="series1">
-                    <div class="owe">
-                      <p>You owe Sarah $5</p>
-                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                    </div><br>
-                    <div class="owe">
-                      <p>You owe Jane $4</p>
-                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                    </div><br>
-                    <div class="owe">
-                      <p>You owe Nicole $4</p>
-                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                    </div> <br> 
-                  </div> 
-                </div>
+              
+              <table class="owe">
+               <tr> <th> PAYMENTS YOU OWE </th> </tr>    
+               <tr>
+                <td>You owe Sarah $5
+                <button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button></td>
+              </tr>
+              <tr>
+                <td>You owe Jane $4 
+			<button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a>
+			</button>
+		</td>   
+              </tr>
+              <tr>
+                <td>You owe Nicole $4
+                <button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button></td>
+              </tr>
+              
+            </table>
 
+            <table class="due">
+              <tr><th> PAYMENTS DUE TO YOU </th></tr>
+              <tr>
+                <td>Sarah owes you $5
+                <button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Charge Now</a></button></td>
+              </tr>
+              <tr>
+                <td>Jane owes you $4
+                <button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Charge Now</a></button></td>
+              </tr>
+              <tr>
+                <td>Nicole owes you $4
+                <button id="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Charge Now</a></button></td>
+              </tr>  
+            </table>
+            
 
-                <div class="row-fluid heading">
-                  <div class="due">
-                    <p>You owe Sarah $5</p>
-                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                  </div><br>
-                  <div class="due">
-                    <p>You owe Jane $4</p>
-                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                  </div><br>
-                  <div class="due">
-                    <p>You owe Nicole $4</p>
-                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-                  </div>  
-                  
-                </div><br><br>
-                <div id="charts">
-                <div id="linecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
-                <div id="piecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
-                </div>
-              </div>
-            </body>
-            </html>
+            <div id="charts">
+              <div id="linecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
+              <div id="piecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
+            </div>
+          </div>
+        </body>
+        </html>
 

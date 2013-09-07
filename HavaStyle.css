@@ -97,31 +97,34 @@ p {
 }
 
 .owe {
-  width: 300px;
-}
-.owe p {
-  float: left; 
-}
+  width: 375px;
+   background:#000;
 
-.owe button {
-  //float: left;
+  opacity:0.8;
+  color: #ccc;
+
 }
 
 .due {
-  width: 300px;
+  width: 375px;
+ background:#000;
+
+  opacity:0.8;
+  color: #ccc;
+
 }
+
+#button-pay {
+	float: right;
+}
+
 table { 
 	border-collapse:separate; 
 	border-spacing: 10px; 
 	margin-left: 10%; 
 	margin-top: 5%;
 }
-.due p {
-  float: left;
-}  
-#series1 {
-  float: left;
-}
+
 .utilities select, input{
 	width: 125px;
 }
