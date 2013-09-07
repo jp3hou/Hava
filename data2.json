@@ -1,0 +1,15 @@
+[{
+   "type" : "pie",
+   "name" : "Fruits",
+   "data" : [
+      [
+        "Gas", 25.0
+      ], [  
+        "Electricity", 25.0
+      ], [
+        "Water", 25.0
+      ], [
+        "Internet", 25.0
+      ]
+    ]
+}]
