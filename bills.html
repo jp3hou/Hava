@@ -14,12 +14,10 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery-styling.js"></script>
   </head>
   <body>
-
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -37,18 +35,13 @@
               <li><a href="shoppingcart.html">Shopping Cart</a></li>
 	      <li><a href="chores.html">Chores</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+
       <div>
 	<p>Month</p>
 		<select>
@@ -71,20 +64,23 @@
   		<table class="utilities">
     			<tr>
       				<td align="left">Water:</td>
-      				<td align="left"><input type="text" name="water" /></td>
+      				<td><input type="text" name="water" /></td>
     			</tr>
    			<tr>
       				<td align="left">Gas:</td>
-      				<td align="left"><input type="text" name="gas" /></td>
+      				<td><input type="text" name="gas" /></td>
     			</tr>
     			<tr>
       				<td align="left">Electricity:</td>
-      				<td align="left"><input type="text" name="electricity" /></td>
+      				<td><input type="text" name="electricity" /></td>
     			</tr>
     			<tr>
       				<td align="left">Internet:</td>
-      				<td align="left"><input type="text" name="internet" /></td>
+      				<td><input type="text" name="internet" /></td>
     			</tr>
+			<tr> 
+				<td align="left">Total:</td>
+			</tr>
   		</table>
 	</form>
   </body>
