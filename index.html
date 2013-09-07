@@ -13,10 +13,69 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
   rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+     <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <script type="text/javascript">
+$(document).ready(function() {
+            var options = {
+                chart: {
+                    renderTo: 'linecontainer',
+                    type: 'line',
+                    marginRight: 130,
+                    marginBottom: 25
+                },
+                title: {
+                    text: 'Billing History',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '',
+                    x: -20
+                },
+                xAxis: {
+                    categories: []
+                },
+                yAxis: {
+                    title: {
+                        text: 'Amount'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    formatter: function() {
+                            return '<b>'+ this.series.name +'</b><br/>'+
+                            this.x +': '+ this.y;
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    x: -10,
+                    y: 100,
+                    borderWidth: 0
+                },
+                series: []
+            }
+            
+            $.getJSON("data.json", function(json) {
+                options.xAxis.categories = json[0]['data'];
+                options.series[0] = json[1];
+                options.series[1] = json[2];
+                options.series[2] = json[3];
+                chart = new Highcharts.Chart(options);
+            }).error(function() {console.log('error');});
+        });
+
+        </script>
 </head>
 <body>
   <div id="symbol"></div>
-
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -57,8 +116,8 @@
     </div> 
   </div>
 
+  
   <div class="row-fluid heading">
-
     <div class="due">
       <p>You owe Sarah $5</p>
       <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
@@ -71,9 +130,12 @@
       <p>You owe Nicole $4</p>
       <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
     </div>  
-  </div>
 
-   <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+  </div><br><br>
+  <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">
+
+  </div>
+   
 
 </div>
 </body>
