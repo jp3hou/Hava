@@ -86,7 +86,7 @@
 	padding: 15px;
         font-size: 16px;
       }
-      .span12 button {  
+      .span12 button-pay {  
       }
       table { border-collapse:separate; border-spacing: 25px; 
       }
@@ -183,7 +183,7 @@ div#bottomBar {
 	border-radius: 40px; */
 }
 em{ font-style:normal; }
-button {
+button-shopping {
 	
 	background:none repeat scroll 0 0 #7B3FFA; color:#FFFFFF;
 	border:medium none;
