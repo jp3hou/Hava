@@ -42,9 +42,10 @@
     </div>
 
     
-    <div class="container">
-      <div id="months">
-	<p>Month</p>
+    <div class="utilities">
+      <div id="dates">
+	<table>
+	<tr><td><p>Month</p>
 	  <select>
 	    <option>January</option>
 	    <option>February</option>
@@ -58,17 +59,24 @@
 	    <option>October</option>
 	    <option>November</option>
 	    <option>December</option>
-	  </select>
+	  </select></td>
+	<td><p>Year </p>
+		<select>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+			<option>2009</option>
+		</select></td>
+	</tr>
+	</table>
      </div>
-	<div> <p>Year </p><input type="text"/> </div>
 
 	  <table class="utilities">
-		  <ol>
-			  <li id="description" align="left">Description</li>
-			  <li><input type="text"/></li> 
-			  <li id="money-amount" align="left">Amount</li>
-			  <li><input type="text"/></li>  
-		  </ol>
+		  <tr>
+			  <td id="description" align="left"><p>Description</p><input type="text"/></td> 
+			  <td id="money-amount" align="left"><p>Amount</p><input type="text"/></td>  
+		  </tr>
 		  
 	  </table>
 	  <button onclick="go()" id="blarf">Submit</button>

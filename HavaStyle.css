@@ -88,8 +88,15 @@
       }
       .span12 button-pay {  
       }
-      table { border-collapse:separate; border-spacing: 25px; 
+      table { border-collapse:separate; border-spacing: 10px; margin-left: 15px; 
       }
+      .utilities select, input{
+	width: 125px;
+	
+      }
+	#blarf {
+		margin-left: 30px;
+	}
       
       
 /* Shopping Cart Style */
