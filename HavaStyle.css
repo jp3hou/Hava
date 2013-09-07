@@ -114,13 +114,11 @@
       .due {
         width: 300px;
       }
-<<<<<<< HEAD
       table { 
 	border-collapse:separate; 
 	border-spacing: 10px; 
 	margin-left: 10%; 
 	margin-top: 5%;
-=======
 
       .due p {
         float: left;
@@ -129,9 +127,8 @@
      #series1 {
       float: left;
      }
-      table { border-collapse:separate; border-spacing: 10px; margin-left: 15px; 
+      table { border-collapse:separate; border-spacing: 10px; margin-left: 15%; 
 
->>>>>>> 1c91995436470386746f62f6aa30d4734cc1c3df
       }
       .utilities select, input{
 	width: 125px;
