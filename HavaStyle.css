@@ -9,6 +9,11 @@
   
 }
 
+#formFill{
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
   /* Large desktop */
 @media (min-width: 980px) { 
   body {
@@ -123,7 +128,7 @@
 
 #wrap{ width:600px; height:900px; top:8px; position:relative; bottom:0px;
   }
-#wrap ul{ margin:10px; padding:0px; text-align:center }
+#wrap ul{ margin-left:110px; margin-top: 20px; padding:0px; text-align:center }
 
 #wrap ul li{ 
   -moz-background-clip: padding;     /* Firefox 3.6 */
