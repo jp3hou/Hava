@@ -211,8 +211,8 @@ button-shopping {
 	}
 	
 div.shopp span{  float:left;}	
-div.shopp div.label{ width:70px; float:left; }		
-div.shopp div.shopp-price{ width:70px; float: left; margin-left: 30px;}
+div.shopp div.label{ width:120px; float:left; }		
+div.shopp div.shopp-price{ width:70px; float: left; margin-left: 35px;}
 .quantity{ float:left; margin-top:-3px; width:20px;}
 img.remove{float:right;cursor:pointer;}
 .cart-total b{width:130px;}
