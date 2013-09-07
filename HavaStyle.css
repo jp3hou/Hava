@@ -12,10 +12,6 @@
   margin-left: 100px;
   margin-top: 80px;
 }
-
-  button {
-
-  }
   /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -119,23 +115,19 @@
 	border-spacing: 10px; 
 	margin-left: 10%; 
 	margin-top: 5%;
-
+	}
       .due p {
         float: left;
-      }
-     
+      }  
      #series1 {
       float: left;
      }
-      table { border-collapse:separate; border-spacing: 10px; margin-left: 15%; 
-
-      }
       .utilities select, input{
 	width: 125px;
       }
-	#blarf {
-		margin-left: 11%;
-	}
+      #blarf {
+	margin-left: 11%;
+      }
 
       
       
