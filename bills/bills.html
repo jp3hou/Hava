@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
+    
+    <script type="text/javascript" src="../shopping_cart/jquery-1.3.2.js"></script>
+    <script src="jquery-styling.js"></script>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+       <a class="brand" href="index.html">Hava</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="bills.html">Bills</a></li>
+              <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
+	      <li><a href="#chores">Chores</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div id="months">
+	<p>Month</p>
+	  <select>
+	    <option>January</option>
+	    <option>February</option>
+	    <option>March</option>
+	    <option>April</option>
+	    <option>May</option>
+	    <option>June</option>
+	    <option>July</option>
+	    <option>August</option>
+	    <option>September</option>
+	    <option>October</option>
+	    <option>November</option>
+	    <option>December</option>
+	  </select>
+     </div>
+
+	  <table class="utilities">
+		  <tr>
+			  <td id="description" align="left">Description</td>
+			  <td><input type="text"/></td> 
+			  <td id="money-amount" align="left">Amount</td>
+			  <td><input type="text"/></td>  
+		  </tr>
+		  
+	  </table>
+	  <button onclick="go()" id="submit">Submit</button>
+    
+    
+    
+  </body>
+</html>
+
