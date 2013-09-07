@@ -72,127 +72,112 @@
                 }).error(function() {console.log('error');});
               });
 
-
-
-
- var optionsPie = {
-                chart: {
-                    renderTo: 'piecontainer',
-                    type: 'pie',
-                    marginRight: 130,
-                    marginBottom: 25
-                },
-                title: {
-                    text: 'Billing by Categories',
+var optionsPie = {
+  chart: {
+    renderTo: 'piecontainer',
+    type: 'pie',
+    marginRight: 130,
+    marginBottom: 25
+  },
+  title: {
+    text: 'Billing by Categories',
                     x: -20 //center
-                },
-                subtitle: {
+                  },
+                  subtitle: {
                     text: '',
                     x: -20
-                },
-                xAxis: {
-                    categories: []
-                },
-                yAxis: {
-                    title: {
-                        text: 'Amount'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
+                  },
+
+                  tooltip: {
                     formatter: function() {
-                            return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y;
+                      return '<b>'+ this.series.name +'</b><br/>'+
+                      this.x +': '+ this.y;
                     }
-                },
-                legend: {
+                  },
+                  legend: {
                     layout: 'vertical',
                     align: 'right',
                     verticalAlign: 'top',
                     x: -10,
                     y: 100,
                     borderWidth: 0
-                },
-                series: [{
+                  },
+                  series: [{
                     type: 'pie',
-                    name: 'Browser share', 
+                    name: 'Utilities', 
                     data: []    
-                }]
-            }           
-            $.getJSON("data2.json", function(json) {
-                optionsPie.series = json;
-                 chart = new Highcharts.Chart(optionsPie);
-            }).error(function() {console.log('error');});; 
+                  }]
+                }           
+                $.getJSON("data2.json", function(json) {
+                  optionsPie.series = json;
+                  chart = new Highcharts.Chart(optionsPie);
+                }).error(function() {console.log('error');});; 
 
-</script>
-</head>
-<body>
-  <div id="symbol"></div>
+                </script>
+              </head>
+              <body>
+                <div id="symbol"></div>
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar"
-        data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="brand" href="index.html">Hava</a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li><a href="bills.html">Bills</a></li>
-          <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
-          <li><a href="#chores">Chores</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                  <div class="navbar-inner">
+                    <div class="container">
+                      <button type="button" class="btn btn-navbar"
+                      data-toggle="collapse" data-target=".nav-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="index.html">Hava</a>
+                    <div class="nav-collapse collapse">
+                      <ul class="nav">
+                        <li><a href="bills.html">Bills</a></li>
+                        <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
+                        <li><a href="#chores">Chores</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-<div class="container">
-  <div class="row-fluid heading">
-    <div id="series1">
-      <div class="owe">
-        <p>You owe Sarah $5</p>
-        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-      </div><br>
-      <div class="owe">
-        <p>You owe Jane $4</p>
-        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-      </div><br>
-      <div class="owe">
-        <p>You owe Nicole $4</p>
-        <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-      </div> <br> 
-    </div> 
-  </div>
+              <div class="container">
+                <div class="row-fluid heading">
+                  <div id="series1">
+                    <div class="owe">
+                      <p>You owe Sarah $5</p>
+                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                    </div><br>
+                    <div class="owe">
+                      <p>You owe Jane $4</p>
+                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                    </div><br>
+                    <div class="owe">
+                      <p>You owe Nicole $4</p>
+                      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                    </div> <br> 
+                  </div> 
+                </div>
 
-  
-  <div class="row-fluid heading">
-    <div class="due">
-      <p>You owe Sarah $5</p>
-      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-    </div><br>
-    <div class="due">
-      <p>You owe Jane $4</p>
-      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-    </div><br>
-    <div class="due">
-      <p>You owe Nicole $4</p>
-      <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
-    </div>  
 
-  </div><br><br>
-  <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">  </div>
-  <div id="piecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">
-  </div>
-
-</div>
-</body>
-</html>
+                <div class="row-fluid heading">
+                  <div class="due">
+                    <p>You owe Sarah $5</p>
+                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                  </div><br>
+                  <div class="due">
+                    <p>You owe Jane $4</p>
+                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                  </div><br>
+                  <div class="due">
+                    <p>You owe Nicole $4</p>
+                    <button type="button-pay"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now</a></button>
+                  </div>  
+                  
+                </div><br><br>
+                <div id="charts">
+                <div id="linecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
+                <div id="piecontainer" style="min-width: 450px; height: 400px; margin: 0 auto"></div>
+                </div>
+              </div>
+            </body>
+            </html>
 
