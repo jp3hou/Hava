@@ -12,125 +12,125 @@
   margin-left: 100px;
   margin-top: 80px;
 }
-  /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
+/* Large desktop */
+@media (min-width: 980px) { 
+  body {
+   padding-top: 60px;
+ }
+ .linediv-l {
+   border-right: 1px white solid;
+ }
+ .linediv-r {
+   border-left: 1px white solid;
+ }
+}
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+ .copy {
+   padding: 2.5% 10%;
+ }
+ .linediv-l {
+   border-bottom: 1px white solid;
+ }
+ .linediv-r {
+   border-top: 1px white solid;
+ }
+}
 
-      /* All form factors */
+/* All form factors */
 
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
+/* Main body and headings */
+body{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.heading, .subheading {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+p.lead {
+  padding-top: 1.5%;
+  font-size: 24px;
+  line-height: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
 
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
+/* Video pitch and Action */
+.pitch {
+  padding: 2.5% 0%;
+}
+.order {
+  padding: 2% 0%;
+}
+.actions {
+  background-color: #343434;
+  padding: 3% 0%;
+}
+.video, .thermometer, .order, .social, .statistics {
+  text-align: center;
+}
+.statistics h3, .statistics p {
+  color: white;
+}
 
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-      
-      .owe {
-        width: 300px;
-      }
-      .owe p {
-        float: left; 
-      }
+/* Marketing Copy and Footer */
+.copy {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  text-align: justify;
+}
+.asset {
+  padding: 2.5% 0%;
+}
+.footer {
+  color: #cccccc;
+  text-align: center;
+}
+.footer p {
+  font-size: 11px;
+}
+.footer a {
+  color: #ccccff;
+}
 
-      .owe button {
-        //float: left;
-      }
+.owe {
+  width: 300px;
+}
+.owe p {
+  float: left; 
+}
 
-      .due {
-        width: 300px;
-      }
-      table { 
+.owe button {
+  //float: left;
+}
+
+.due {
+  width: 300px;
+}
+table { 
 	border-collapse:separate; 
 	border-spacing: 10px; 
 	margin-left: 10%; 
 	margin-top: 5%;
-	}
-      .due p {
-        float: left;
-      }  
-     #series1 {
-      float: left;
-     }
-      .utilities select, input{
+}
+.due p {
+  float: left;
+}  
+#series1 {
+  float: left;
+}
+.utilities select, input{
 	width: 125px;
-      }
-      #blarf {
+}
+#blarf {
 	margin-left: 11%;
-      }
+}
 
-      
-      
+
+
 /* Shopping Cart Style */
 
 #add{
@@ -150,7 +150,7 @@
 }
 
 #wrap{ width:600px; height:900px; top:8px; position:relative; bottom:0px;
-  }
+}
 #wrap ul{ margin-left:110px; margin-top: 20px; padding:0px; text-align:center }
 
 #wrap ul li{ 
