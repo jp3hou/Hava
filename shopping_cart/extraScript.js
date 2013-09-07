@@ -57,7 +57,24 @@ $(document).ready(function() {
 		$('#total-hidden-charges').val(prev_charges);
 		$(this).parent().remove();
 		
-	});	
+	});
+	
+	$('.prior').livequery('click', function() {
+		
+		var deduct = $(this).parent().children(".shopp-price").find('em').html();
+		var prev_charges = $('.cart-total span').html();
+		
+		var thisID = $(this).parent().attr('id').replace('each-','');
+		
+		var pos = getpos(Arrays,thisID);
+		Arrays.splice(pos,1,"0")
+		
+		prev_charges = parseInt(prev_charges)-parseInt(deduct);
+		$('.cart-total span').html(prev_charges);
+		$('#total-hidden-charges').val(prev_charges);
+		$(this).parent().remove();
+		
+	});
 	
 	$('#Submit').livequery('click', function() {
 		
@@ -76,7 +93,7 @@ $(document).ready(function() {
 		var price = $('#item-price').val();
 		//alert(name + ", " + price);
 		
-		var string = "<li onclick=\"hide(\'"+count+ "\')\" id=\""+ count +"\"><div><span class=\"name\">" + name +" : $<span class=\"price\">"+ price+"</span></div> </span></li>"
+		var string = "<li onclick=\"hide(\'"+count+ "\')\" id=\""+ count +"\"><div><span class=\"name\">" + name +" : $<span class=\"price\">"+ price+"</span></div><img src=\"remove.png\" class=\"prior\" /></li>";
 	
 		$("#toBuy").append(string);
 		count++;
