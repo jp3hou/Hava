@@ -82,11 +82,11 @@
         color: #ccccff;
       }
       .span12 p {
+	text-align: center;
 	padding: 15px;
         font-size: 16px;
-        float: left;
       }
-      .span12 button {
-	margin: 15px;   
+      .span12 button {  
       }
+      table { border-collapse:separate; border-spacing: 25px; }
 
