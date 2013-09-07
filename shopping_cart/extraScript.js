@@ -34,7 +34,7 @@ $(document).ready(function() {
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div  class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemprice+')" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -91,7 +91,6 @@ $(document).ready(function() {
 		
 		var name = $('#item-name').val();
 		var price = $('#item-price').val();
-		//alert(name + ", " + price);
 		
 		var string = "<li onclick=\"hide(\'"+count+ "\')\" id=\""+ count +"\"><div><span class=\"name\">" + name +" : $<span class=\"price\">"+ price+"</span></div><img src=\"remove.png\" class=\"prior\" /></li>";
 	
@@ -133,7 +132,7 @@ $(document).ready(function() {
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test()" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemprice+')" class="label">'+itemname+'</div><div class="shopp-price"> $<em id='+thisID+'>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -143,8 +142,12 @@ $(document).ready(function() {
 	
 });
 
-function test(name) {
-	alert(name);
+function test(price, id) {
+	var realPrice=prompt("The posted price was: $" + price +". The price paid for this item was: ", "$0.00" );
+	var a=document.getElementById(id)
+	document.getElementById("demo").innerHTML=a.getAttribute("target");
+	
+	return realPrice;
 }
 
 
