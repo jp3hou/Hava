@@ -115,11 +115,13 @@
         width: 300px;
       }
 
-
       .due p {
         float: left;
       }
      
+     #series1 {
+      float: left;
+     }
       table { border-collapse:separate; border-spacing: 10px; margin-left: 15px; 
 
       }
