@@ -1,3 +1,5 @@
-var selector=".utilities";
+function go() {
+    alert("testing");
+}
 
 

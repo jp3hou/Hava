@@ -14,9 +14,11 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../shopping_cart/jquery-1.3.2.js"></script>
     <script src="jquery-styling.js"></script>
   </head>
+  
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -40,49 +42,39 @@
       </div>
     </div>
 
+    
     <div class="container">
-
-      <div>
+      <div id="months">
 	<p>Month</p>
-		<select>
-			<option>January</option>
-			<option>February</option>
-			<option>March</option>
-			<option>April</option>
-			<option>May</option>
-			<option>June</option>
-			<option>July</option>
-			<option>August</option>
-			<option>September</option>
-			<option>October</option>
-			<option>November</option>
-			<option>December</option>
-		</select>
+	  <select>
+	    <option>January</option>
+	    <option>February</option>
+	    <option>March</option>
+	    <option>April</option>
+	    <option>May</option>
+	    <option>June</option>
+	    <option>July</option>
+	    <option>August</option>
+	    <option>September</option>
+	    <option>October</option>
+	    <option>November</option>
+	    <option>December</option>
+	  </select>
      </div>
-	<div>
-	<form>
-  		<table class="utilities">
-    			<tr>
-      				<td align="left">Water:</td>
-      				<td><input type="text" name="water" /></td>
-    			</tr>
-   			<tr>
-      				<td align="left">Gas:</td>
-      				<td><input type="text" name="gas" /></td>
-    			</tr>
-    			<tr>
-      				<td align="left">Electricity:</td>
-      				<td><input type="text" name="electricity" /></td>
-    			</tr>
-    			<tr>
-      				<td align="left">Internet:</td>
-      				<td><input type="text" name="internet" /></td>
-    			</tr>
-			<tr> 
-				<td align="left">Total:</td>
-			</tr>
-  		</table>
-	</form>
+
+	  <table class="utilities">
+		  <tr>
+			  <td id="description" align="left">Description</td>
+			  <td><input type="text"/></td> 
+			  <td id="money-amount" align="left">Amount</td>
+			  <td><input type="text"/></td>  
+		  </tr>
+		  
+	  </table>
+	  <button onclick="go()" id="submit">Submit</button>
+    
+    
+    
   </body>
 </html>
 
