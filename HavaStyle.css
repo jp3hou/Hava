@@ -1,4 +1,23 @@
+#symbol{
+  position: absolute;
+  width: 50px;
+  height: 200%;
+  top: 0px;
+  z-index: -1;
+  background-image: url("stripe.png");
+  background-repeat: repeat-y;
+  
+}
+
+#formFill{
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
   /* Large desktop */
+<<<<<<< HEAD
+
+=======
       @media (min-width: 980px) { 
         body {
          padding-top: 60px;
@@ -97,65 +116,67 @@
 	#blarf {
 		margin-left: 30px;
 	}
+
       
       
 /* Shopping Cart Style */
 
 #add{
-	background-color: grey;
-	margin-left: 15px;
-	padding: 5px;
+  background-color: #A39D9F;
+  margin-left: 22px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid black;
 }
 
 #item-entry{
-	list-style-type: none;
+  list-style-type: none;
 }
 
 #item-entry li{
-	display:inline;
+  display:inline;
 }
 
-#wrap{ width:600px; height:900px; top:20px; position:relative; bottom:0px;
+#wrap{ width:600px; height:900px; top:8px; position:relative; bottom:0px;
   }
-#wrap ul{ margin:10px; padding:0px; text-align:center }
+#wrap ul{ margin-left:110px; margin-top: 20px; padding:0px; text-align:center }
 
 #wrap ul li{ 
-	-moz-background-clip: padding;     /* Firefox 3.6 */
-	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-	/*border: 10px solid rgba(0,0,0,0.3);*/
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px; 
-	
-	/*background:url("bgs.png") repeat-x scroll;*/
-	list-style-type:none; 
-	/*height:80px; */
-	width:160px; 
-	margin-left:13px; 
-	/*margin-bottom:15px; */
-	/*float:left;*/
-	padding:15px 1px 0px 0px;
-	font-family:"LubalGraphBdBTBold",Tahoma;
-	font-size:2em;
-	overflow:hidden;
+  -moz-background-clip: padding;     /* Firefox 3.6 */
+  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+  background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  /*border: 10px solid rgba(0,0,0,0.3);*/
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px; 
+  /*background:url("bgs.png") repeat-x scroll;*/
+  list-style-type:none; 
+  /*height:80px; */
+  width:160px; 
+  margin-left:13px; 
+  /*margin-bottom:15px; */
+  /*float:left;*/
+  padding: 0px 1px 0px 0px;
+  font-family:"LubalGraphBdBTBold",Tahoma;
+  font-size:2em;
+  overflow:hidden;
 }
 
 #wrap ul li div{ 
 
-	height:25px;
-	text-align:center;
-	width:160px;
-	margin-top:10px;
-	position:relative;
-	bottom:0px;
-	padding-top:12px;
-	padding-bottom:4px;
-	background:#000;
-	font: 11px Tahoma, Helvetica, Arial, Sans-Serif;
-	opacity:0.8;
-	color: #ccc;
-	text-shadow: 0px 2px 3px #555;
+  height:25px;
+  text-align:center;
+  width:160px;
+  margin-top:10px;
+  position:relative;
+  bottom:0px;
+  padding-top:12px;
+  padding-bottom:4px;
+  background:#000;
+  font: 11px Tahoma, Helvetica, Arial, Sans-Serif;
+  opacity:0.8;
+  color: #ccc;
+  text-shadow: 0px 2px 3px #555;
 }
 
 
@@ -175,46 +196,46 @@ div#bottomBar {
 
 #left_bar 
 {
-	top:170px; 
-	left:400px;
-	height:350px;
-	width:250px;
-	position:fixed;
-	padding:10px;
-	/*-moz-background-clip: padding;   
-	-webkit-background-clip: padding;  
-	background-clip: padding-box;      
-	border: 10px solid #006699;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px; */
+  top:170px; 
+  left:400px;
+  height:350px;
+  width:250px;
+  position:fixed;
+  padding:10px;
+  /*-moz-background-clip: padding;   
+  -webkit-background-clip: padding;  
+  background-clip: padding-box;      
+  border: 10px solid #006699;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px; */
 }
 em{ font-style:normal; }
 button-shopping {
-	
-	background:none repeat scroll 0 0 #7B3FFA; color:#FFFFFF;
-	border:medium none;
-	font-family:"LubalGraphBdBTBold",Tahoma;
-	font-size:1.1em;
-	margin-right:-14px;
-	padding:10px;
-	cursor:pointer;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px; 
+  
+  background:none repeat scroll 0 0 #7B3FFA; color:#FFFFFF;
+  border:medium none;
+  font-family:"LubalGraphBdBTBold",Tahoma;
+  font-size:1.1em;
+  margin-right:-14px;
+  padding:10px;
+  cursor:pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px; 
 }
 
 .cart-total{ background:#E8E8E8}
 
 .shopp,.cart-total{ 
-	border:solid #ccc 1px; padding:8px; 
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px; font-size:12px;
-	background:url(remove.png) center right no-repeat 5px;
-	border-radius: 8px; 
-	font-family:"LubalGraphBdBTBold",Tahoma; 
-	margin-bottom:3px;
-	width:260px;
+  border:solid #ccc 1px; padding:8px; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px; font-size:12px;
+  background:url(remove.png) center right no-repeat 5px;
+  border-radius: 8px; 
+  font-family:"LubalGraphBdBTBold",Tahoma; 
+  margin-bottom:3px;
+  width:260px;
 }
 
 

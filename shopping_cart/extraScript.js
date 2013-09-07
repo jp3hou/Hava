@@ -34,7 +34,7 @@ $(document).ready(function() {
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div  class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -112,9 +112,6 @@ $(document).ready(function() {
 		{
 			var price = $('#each-'+thisID).children(".shopp-price").find('em').html();
 			
-			
-			
-			
 			$('#each-'+thisID).children(".shopp-price").find('em').html(total);
 		
 			
@@ -136,7 +133,7 @@ $(document).ready(function() {
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test()" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -146,6 +143,9 @@ $(document).ready(function() {
 	
 });
 
+function test(name) {
+	alert(name);
+}
 
 
 function include(arr, obj) {

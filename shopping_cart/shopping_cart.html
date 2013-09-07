@@ -23,6 +23,7 @@
 
 
 <body>
+	<div id="symbol"></div>
 <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -47,7 +48,7 @@
 
 
 <div align="left">
-	<form name="theForm">
+	<form id="formFill">
             <ul id="item-entry">
                 <li>
                     <label>
@@ -67,7 +68,7 @@
 	<div id="wrap" align="left">
 		<ul id="toBuy">
 			<li onclick="hide('1')" id="1">
-				<div><span class="name">Peaches</span>: $<span class="price">70</span></div><img src="remove.png" class="prior" />
+				<div><span onclick="test()"  class="name">Peaches</span>: $<span class="price">70</span></div><img src="remove.png" class="prior" />
 			</li>
 			<li onclick="hide('2')" id="2">
 				<div><span class="name">Raspberries</span>: $<span class="price">34 </span></div><img src="remove.png" class="prior" />
