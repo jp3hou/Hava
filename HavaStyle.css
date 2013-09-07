@@ -110,7 +110,7 @@
 
 #wrap{ width:600px; height:900px; top:20px; position:relative; bottom:0px;
   }
-#wrap ul{ margin:0px; padding:0px; text-align:center }
+#wrap ul{ margin:10px; padding:0px; text-align:center }
 
 #wrap ul li{ 
 	-moz-background-clip: padding;     /* Firefox 3.6 */
@@ -168,8 +168,8 @@ div#bottomBar {
 
 #left_bar 
 {
-	top:120px; 
-	left:600px;
+	top:170px; 
+	left:400px;
 	height:350px;
 	width:250px;
 	position:fixed;
@@ -210,9 +210,15 @@ button-shopping {
 	width:260px;
 }
 
-div.shopp span{  float:left;}	
-div.shopp div.label{ width:120px; float:left; }		
-div.shopp div.shopp-price{ width:70px; float: left; margin-left: 35px;}
+
+
+.shopp{
+
+  margin-top: 20px;
+}
+.shopp span{  float:left;}	
+.shopp div.label{ width:120px; float:left; }		
+.shopp div.shopp-price{ width:70px; float: left; margin-left: 35px;}
 .quantity{ float:left; margin-top:-3px; width:20px;}
 img.remove{float:right;cursor:pointer;}
 img.prior{float:right;cursor:pointer;position:relative;bottom:30px;}
