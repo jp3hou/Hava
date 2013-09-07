@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,97 +12,9 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
-    <style type="text/css">
-
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
-
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-    </style>
+    <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
   </head>
   <body>
-
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -113,30 +24,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Hava</a>
+          <a class="brand" href="index.html">Hava</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#bills">Bills</a></li>
-              <li><a href="#shopping-list">Shopping List</a></li>
+              <li><a href="bills.html">Bills</a></li>
+              <li><a href="#shopping-cart">Shopping Cart</a></li>
 	      <li><a href="#chores">Chores</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-        <div class="span12">
-          <h1>You owe Sarah $500 for household chores</h1>
-	  <button type="button"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now!</a></button>
+        <div class="span12", id="prettify">
+          <p>You owe Sarah $5 for household chores</p>
+	         <button type="button"><a href="https://venmo.com?txn=Charge&recipients=sahar-kazemzadeh&amount=1&note=utilities">Pay Now!</a></button>
         </div>
       </div> 
   </body>

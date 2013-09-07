@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
+    
+  </head>
+  <body>
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Hava</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="bills.html">Bills</a></li>
+              <li><a href="shoppingcart.html">Shopping Cart</a></li>
+	      <li><a href="chores.html">Chores</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div>
+	<p>Month</p>
+		<select>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+     </div>
+	<div>
+	<form>
+  		<table class="utilities">
+    			<tr>
+      				<td align="left">Water:</td>
+      				<td align="left"><input type="text" name="water" /></td>
+    			</tr>
+   			<tr>
+      				<td align="left">Gas:</td>
+      				<td align="left"><input type="text" name="gas" /></td>
+    			</tr>
+    			<tr>
+      				<td align="left">Electricity:</td>
+      				<td align="left"><input type="text" name="electricity" /></td>
+    			</tr>
+    			<tr>
+      				<td align="left">Internet:</td>
+      				<td align="left"><input type="text" name="internet" /></td>
+    			</tr>
+  		</table>
+	</form>
+  </body>
+</html>
+
