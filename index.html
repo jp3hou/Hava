@@ -13,20 +13,77 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
   rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-     <script src="http://code.highcharts.com/highcharts.js"></script>
-        <script src="http://code.highcharts.com/modules/exporting.js"></script>
-        <script type="text/javascript">
-$(document).ready(function() {
-            var options = {
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var options = {
+      chart: {
+        renderTo: 'linecontainer',
+        type: 'line',
+        marginRight: 130,
+        marginBottom: 25
+      },
+      title: {
+        text: 'Billing History',
+                    x: -20 //center
+                  },
+                  subtitle: {
+                    text: '',
+                    x: -20
+                  },
+                  xAxis: {
+                    categories: []
+                  },
+                  yAxis: {
+                    title: {
+                      text: 'Amount'
+                    },
+                    plotLines: [{
+                      value: 0,
+                      width: 1,
+                      color: '#808080'
+                    }]
+                  },
+                  tooltip: {
+                    formatter: function() {
+                      return '<b>'+ this.series.name +'</b><br/>'+
+                      this.x +': '+ this.y;
+                    }
+                  },
+                  legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    x: -10,
+                    y: 100,
+                    borderWidth: 0
+                  },
+                  series: []
+                }
+
+                $.getJSON("data.json", function(json) {
+                  options.xAxis.categories = json[0]['data'];
+                  options.series[0] = json[1];
+                  options.series[1] = json[2];
+                  options.series[2] = json[3];
+                  chart = new Highcharts.Chart(options);
+                }).error(function() {console.log('error');});
+              });
+
+
+
+
+ var optionsPie = {
                 chart: {
-                    renderTo: 'linecontainer',
-                    type: 'line',
+                    renderTo: 'piecontainer',
+                    type: 'pie',
                     marginRight: 130,
                     marginBottom: 25
                 },
                 title: {
-                    text: 'Billing History',
+                    text: 'Billing by Categories',
                     x: -20 //center
                 },
                 subtitle: {
@@ -60,19 +117,18 @@ $(document).ready(function() {
                     y: 100,
                     borderWidth: 0
                 },
-                series: []
-            }
-            
-            $.getJSON("data.json", function(json) {
-                options.xAxis.categories = json[0]['data'];
-                options.series[0] = json[1];
-                options.series[1] = json[2];
-                options.series[2] = json[3];
-                chart = new Highcharts.Chart(options);
-            }).error(function() {console.log('error');});
-        });
+                series: [{
+                    type: 'pie',
+                    name: 'Browser share', 
+                    data: []    
+                }]
+            }           
+            $.getJSON("data2.json", function(json) {
+                optionsPie.series = json;
+                 chart = new Highcharts.Chart(optionsPie);
+            }).error(function() {console.log('error');});; 
 
-        </script>
+</script>
 </head>
 <body>
   <div id="symbol"></div>
@@ -132,10 +188,9 @@ $(document).ready(function() {
     </div>  
 
   </div><br><br>
-  <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">
-
+  <div id="linecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">  </div>
+  <div id="piecontainer" style="min-width: 400px; height: 400px; margin: 0 auto">
   </div>
-   
 
 </div>
 </body>
