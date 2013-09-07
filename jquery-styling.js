@@ -1,5 +1,7 @@
 function go() {
-    alert("testing");
+    	var description = $('#description').text();
+	var price = $('#money-amount').text();
+	alert(description);
 }
 
 
