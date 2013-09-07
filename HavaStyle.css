@@ -272,3 +272,10 @@ img.remove{float:right;cursor:pointer;}
 img.prior{float:right;cursor:pointer;position:relative;bottom:30px;}
 .cart-total b{width:130px;}
 
+/* Chores */
+.choresList{
+  padding-top: 2.5%;
+  color: blue;
+  text-align: center;
+  list-style: none;
+}
