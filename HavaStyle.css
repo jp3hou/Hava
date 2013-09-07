@@ -107,7 +107,11 @@
       }
       .span12 button-pay {  
       }
-      table { border-collapse:separate; border-spacing: 10px; margin-left: 10%; margin-top: 5%;
+      table { 
+	border-collapse:separate; 
+	border-spacing: 10px; 
+	margin-left: 10%; 
+	margin-top: 5%;
       }
       .utilities select, input{
 	width: 125px;
