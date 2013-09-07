@@ -33,7 +33,6 @@
        <a class="brand" href="index.html">Hava</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
               <li class="active"><a href="bills.html">Bills</a></li>
               <li><a href="shopping_cart/shopping_cart.html">Shopping Cart</a></li>
 	      <li><a href="#chores">Chores</a></li>
@@ -44,9 +43,10 @@
     </div>
 
     
-    <div class="container">
-      <div id="months">
-	<p>Month</p>
+    <div class="utilities">
+      <div id="dates">
+	<table>
+	<tr><td><p>Month</p>
 	  <select>
 	    <option>January</option>
 	    <option>February</option>
@@ -60,16 +60,37 @@
 	    <option>October</option>
 	    <option>November</option>
 	    <option>December</option>
-	  </select>
+	  </select></td>
+	<td><p>Year </p>
+		<select>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+			<option>2009</option>
+		</select></td>
+	</tr>
+	</table>
      </div>
-	<div> <p>Year </p><input type="text"/> </div>
 
 	  <table class="utilities">
+  		<tr>
+			  <td align="left"><p>Water: </p></td> 
+			  <td align="left"><input type="text"/></td>  
+		  </tr>  <tr>
+			  <td align="left"><p>Gas:</p></td> 
+			  <td align="left"><input type="text"/></td>  
+		  </tr>  <tr>
+			  <td align="left"><p>Electricity: </p></td> 
+			  <td align="left"><input type="text"/></td>  
+		  </tr>
 		  <tr>
-			  <td id="description" align="left">Description</td>
-			  <td><input type="text"/></td> 
-			  <td id="money-amount" align="left">Amount</td>
-			  <td><input type="text"/></td>  
+			  <td align="left"><p>Internet: </p></td> 
+			  <td align="left"><input type="text"/></td>  
+		  </tr>  
+		  <tr>
+			  <td align="left"><p>Other:</p><input id="description" type="text"/></td> 
+			  <td align="left"><p>Amount</p><input id="money-amount" type="text"/></td>  
 		  </tr>
 		  
 	  </table>
