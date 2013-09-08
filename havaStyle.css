@@ -26,6 +26,13 @@
   
 }
 
+h1{
+  margin-left: 70px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+
 
 /* Large desktop */
 @media (min-width: 980px) { 
@@ -138,6 +145,10 @@ table {
   border-spacing: 10px; 
   margin-left: 10%; 
   margin-top: 5%;
+}
+
+.utilities{
+  margin-top: 0px;
 }
 
 .utilities select, input{
@@ -290,7 +301,7 @@ img.prior{float:right;cursor:pointer;position:relative;bottom:30px;}
 #choresList ul{
   text-align: left;
   list-style: none;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 #linecontainer {
