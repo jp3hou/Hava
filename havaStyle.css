@@ -17,9 +17,16 @@
   float: right;
 }
 
-.hilite{
-  background-color: yellow;
+.house{
+  width: 10%;
+  float: right;
+  clear: both;
+  position: absolute;
+  right: 30px;
+  
 }
+
+
 /* Large desktop */
 @media (min-width: 980px) { 
   body {
