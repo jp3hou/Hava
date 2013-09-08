@@ -12,6 +12,14 @@
   margin-left: 100px;
   margin-top: 80px;
 }
+
+#logo{
+  float: right;
+}
+
+.hilite{
+  background-color: yellow;
+}
 /* Large desktop */
 @media (min-width: 980px) { 
   body {

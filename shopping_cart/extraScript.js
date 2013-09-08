@@ -6,7 +6,7 @@ $(document).ready(function() {
 		
 		var thisID = $(this).attr('id');
 		var itemname  = $(this).find('div .name').html();
-		var itemprice = $(this).find('div .price').html();
+		var itemPrice = $(this).find('div .price').html();
 			
 		if(include(Arrays,thisID))
 		{
@@ -29,12 +29,12 @@ $(document).ready(function() {
 			Arrays.push(thisID);
 			
 			var prev_charges = $('.cart-total span').html();
-			prev_charges = parseInt(prev_charges)+parseInt(itemprice);
-			
+			prev_charges = parseInt(prev_charges)+parseInt(itemPrice);
+		
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemprice+')" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemPrice+')" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemPrice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -105,8 +105,8 @@ $(document).ready(function() {
 		
 		var thisID = $(this).attr('id');
 		var itemname  = realNam;
-		var itemprice = $(this).find('div .price').html();
-			
+		var itemPrice = $(this).find('div .price').html();
+		
 		if(include(Arrays,thisID))
 		{
 			var price = $('#each-'+thisID).children(".shopp-price").find('em').html();
@@ -127,12 +127,12 @@ $(document).ready(function() {
 			Arrays.push(thisID);
 			
 			var prev_charges = $('.cart-total span').html();
-			prev_charges = parseInt(prev_charges)+parseInt(itemprice);
+			prev_charges = parseInt(prev_charges)+parseInt(itemPrice);
 			
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			
-			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemprice+')" class="label">'+itemname+'</div><div class="shopp-price"> $<em id='+thisID+'>'+itemprice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
+			$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div onclick="test('+ itemPrice +')" class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemPrice+'</em></div><img src="remove.png" class="remove" /><br class="all" /></div>');
 			
 		}
 		
@@ -142,12 +142,11 @@ $(document).ready(function() {
 	
 });
 
-function test(price, id) {
-	var realPrice=prompt("The posted price was: $" + price +". The price paid for this item was: ", "$0.00" );
-	var a=document.getElementById(id)
-	document.getElementById("demo").innerHTML=a.getAttribute("target");
+
+function test(price) {
+	var realPrice=prompt("The posted price was: $" + price +". The price paid for this item was: ", "0.00" );
+	/* add connection to venmo here */
 	
-	return realPrice;
 }
 
 
