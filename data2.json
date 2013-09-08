@@ -1,15 +1,15 @@
 [{
    "type" : "pie",
-   "name" : "Fruits",
+   "name" : "Utilities",
    "data" : [
       [
         "Gas", 25.0
       ], [  
-        "Electricity", 25.0
+        "Electricity",35.0
       ], [
-        "Water", 25.0
+        "Water", 20.0
       ], [
-        "Internet", 25.0
+        "Internet", 20.0
       ]
     ]
 }]
