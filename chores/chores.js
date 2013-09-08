@@ -4,7 +4,7 @@
     }
 
     function displayChores(areaName){
-      var chores = ['mop/sweep', 'trash', 'dishes', 'clean'];
+      var chores = ['mop/sweep', 'trash', 'dishes', 'vacuuming'];
       var housemates = ['Sahar', 'Roxanne', 'Julia', 'Nicole'];
       var currentDate = Date.now(); // corresponds to current time
       var startDate = new Date();

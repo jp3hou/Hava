@@ -13,13 +13,13 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
-	  <link rel="stylesheet" href="HavaStyle.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="../HavaStyle.css" type="text/css"/>
     <script type="text/javascript" src="../shopping_cart/jquery-1.3.2.js"></script>
     <script src="../chores/chores.js"></script>
   </head>
   
   <body onload="displayChores('choresList')">
+    <div id="symbol"></div>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -34,13 +34,13 @@
             <ul class="nav">
               <li><a href="../bills.html">Bills</a></li>
               <li class="active"><a href="../shopping_cart/shopping_cart.html">Shopping Cart</a></li>
-	            <li><a href="chores.html">Chores</a></li>
+              <li><a href="chores.html">Chores</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="chores">
+    <div id="choresList">
       <ul id="choresList">
       </ul> 
     </div>
